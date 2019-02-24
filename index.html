@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Registro de estudiantes</title>
+	<script type="text/javascript" src="MiJSON.js"></script>	
+</head>
+<body>
+</body>
+<h1>Registro Estudiante</h1>
+
+	<table id="formEstudiante" border="0">
+		<tr>
+		    <td>Codigo</td>
+		    <td><input type="text" id="codigo" name="codigo" value=""/></td>
+		</tr>	
+		<tr>	    
+		    <td>Nombre</td>
+		    <td><input type="text" id="nombre" name="nombre" value=""/></td>
+		</tr>
+		<tr>
+		    <td>Nota</td>
+		    <td><input type="number" id="nota" name="nota" min="1" max="5" value=""/></td>
+		</tr>
+	</table>
+<br/> 
+<input type="button" id="btnAdd" name="RegistraEstudiante" value="Registrar Estudiante">
+<input type="button" id="btnProm" name="MostrarPromedio" value="Mostrar promedio">
+<input type="button" id="btnNMax" name="MostrarNotaMax" value="Mostrar mejor nota">
+<input type="button" id="btnNMin" name="MostrarNotaMin" value="Mostrar nota mas baja">
+
+<h1>Listado de Estudiantes</h1>
+<div id="todos">
+	<table id="listaEstudiantes">
+		<tr>
+			<th>Codigo</th>
+			<th>Nombre</th>
+			<th>Nota</th>		
+		</tr>									
+	</table>
+</div>
+</html> 	
