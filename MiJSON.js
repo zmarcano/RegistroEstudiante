@@ -126,7 +126,6 @@ function registrarEstudiante()
   jsonText.push(estudiante);
 
   var json =JSON.stringify(jsonText);
-  /*alert(json);*/
 
   var table = document.getElementById("listaEstudiantes");
 
@@ -139,4 +138,8 @@ function registrarEstudiante()
   cell1.innerHTML= codigo;
   cell2.innerHTML= nombre;
   cell3.innerHTML= nota;
+
+  document.getElementById("codigo").value = "";
+  document.getElementById("nombre").value ="";
+  document.getElementById("nota").value = "";
 }
